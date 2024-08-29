@@ -5,7 +5,7 @@ cross-compiling to arm with a GNU toolchain.
 ## The bug
 This bug occurs because clangd actually uses clang under the hood, but tries to
 parse GNU's version of the `arm_neon.h` header, which uses GNU intrisics clangd
-doesn't kow about.
+doesn't know about.
 
 It is referenced in these two issues : [#1707](https://github.com/clangd/clangd/issues/1707) [#1753](https://github.com/clangd/clangd/issues/1753)
 
